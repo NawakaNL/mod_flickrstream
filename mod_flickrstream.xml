@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.5.0" client="site" method="upgrade">
+    <name>Flickrstream</name>
+    <author>Tristan de Boer</author>
+    <authorEmail>info@tristandeboer.nl</authorEmail>
+    <creationDate>8 maart 2018</creationDate>
+    <copyright>Copyright 2018 Tristan de Boer</copyright>
+    <license>GNU/GPL, see LICENSE.md</license>
+    <version>1.0.0</version>
+    <description>
+      Een module om een Flickrstream te tonen.
+    </description>
+    <files>
+        <filename>mod_flickrstream.xml</filename>
+        <filename module="mod_flickrstream">mod_flickrstream.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+      <fields name="params">
+        <fieldset name="basic">
+          <field name="userId" type="text" required="true" hint="userId" label="USERID" description="Vul hier de user_id van het Flickr account in" />
+          <field name="setId" type="text" required="true" hint="setId" label="SETID" description="Vul hier de set_id van het Flickr account in" />
+
+          <field name="color" type="color" default="#010050"
+	            label="Kleur"
+	            description="Kleur" />
+
+        </fieldset>
+      </fields>
+    </config>
+</extension>
