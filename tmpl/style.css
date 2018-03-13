@@ -25,7 +25,7 @@
 }
 
 
-.flickrstream > .flickrstream-title {
+.flickrstream .flickrstream-title {
   background: none;
   background-color: #010050;
   font-weight: bold;
@@ -33,7 +33,7 @@
   padding: 5px 10px
 }
 
-.flickrstream > .flickrstream-content {
+.flickrstream .flickrstream-content {
   border: 1px solid #a8c7e0;
   border-top: none
 }
